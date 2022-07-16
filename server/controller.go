@@ -2,6 +2,6 @@ package main
 
 import "net/http"
 
-func WebApp(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello World"))
+func webApp(wr http.ResponseWriter, r *http.Request) {
+	wr.Write([]byte("Hello World"))
 }

@@ -14,6 +14,6 @@ func main() {
 		log.Printf("ERROR:%s", err)
 	}
 
-	http.HandleFunc("/", WebApp)
+	http.HandleFunc("/", webApp)
 	http.ListenAndServe(os.Getenv("PORT"), nil)
 }
